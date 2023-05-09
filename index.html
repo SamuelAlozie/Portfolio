@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeV-SaM</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="spinner" id="spinner">
+        <section class="loader"></section>
+    </div>
+    <header>
+        <nav>
+            <div class="logo">
+                <h2>SAM</h2>
+            </div>
+            <div class="menu">
+                <a href="#Home" class="menu-items">Home</a>
+                <a href="#About" class="menu-items">About</a>
+                <a href="#Project" class="menu-items">Projects</a>
+            </div>
+            <div class="btn">
+                <a href="#Contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero" id="Home">
+            <div class="hero-left">
+                <h4>Frontend Web Developer</h4>
+                <h1>Hello! Am Alozie Samuel</h1>
+                <p>Developing  websites for over 6 months as a Web Developer. I care a lot about development for positive impact and i derive joy creating websites.</p>
+                <div class="btn1">
+                    <a href="https://wa.me/+2347049941648" target="_blank">Hire Me</a>
+                </div>        
+            </div>
+            <div class="hero-right">
+                <img src="./img/IMG-20230322-WA0056-removebg-preview.png" alt="">
+                <div class="icons">
+                    <img src="./img/icons8_html_5.ico" alt="">
+                    <img src="./img/icons8_css3.ico" alt="">
+                    <img src="./img/icons8_javascript.ico" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="about-me" id="About">
+            <div class="about">
+                <h2>About Me:</h2>
+                <p>I am from Imo State, Nigeria. Studying Computer Science and Technology at Federal Polytechnic Nekede Owerri, Imo State, Nigeria. I am experienced in using HTML, CSS and JAVASCRIPT.</p>
+            </div>
+            <div class="personality">
+                <h2>Personality:</h2>
+                <p>I am a cool person, love music and also have a good voice. Looking forward to creating more websites that will be of more use to our society.</p>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="html">
+                <img src="./img/icons8_html_5_32.png" alt="">
+                <h5>HTML</h5>
+            </div>
+            <div class="css">
+                <img src="./img/icons8_css3_32.png" alt="">
+                <h5>CSS</h5>
+            </div>
+            <div class="js">
+                <img src="./img/icons8_javascript_32.png" alt="">
+                <h5>JAVASCRIPT</h5>
+            </div>
+            <div class="node">
+                <img src="./img/icons8_nodejs_32.png" alt="">
+                <h5>NODEJS</h5>
+            </div>
+            <div class="bootstrap">
+                <img src="./img/icons8_bootstrap_32.png" alt="">
+                <h5>BOOTSTRAP</h5>
+            </div>
+            <div class="react">
+                <img src="./img/icons8_react_32.png" alt="">
+                <h5>REACTJS</h5>
+            </div>
+        </div>
+        <div class="projects" id="Project">
+            <h1>Projects</h1>
+            <div class="project-items">
+                <div class="item">
+                    <img src="./img/Screenshot 2023-03-30 at 14-39-45 Document.png" alt="">
+                    <h4>GitHub Profile Data</h4>
+                    <p>Using HTML, CSS and JAVASCRIPT</p>
+                    <button>View</button>
+                </div>
+                <div class="item">
+                    <img src="./img/Screenshot 2023-03-30 at 14-38-55 Document.png" alt="">
+                    <h4>Wrist Watch Shopping</h4>
+                    <p>Using HTML, CSS and JAVASCRIPT</p>
+                    <button>View</button>
+                </div>
+                <div class="item">
+                    <img src="./img/Screenshot 2023-03-30 at 14-38-16 Document.png" alt="">
+                    <h4>Sneakers Shopping</h4>
+                    <p>Using HTML, CSS and JAVASCRIPT</p>
+                    <button>View</button>
+                </div>
+            </div>
+        </div>
+        <section class="form" id="Contact">
+            <h1>Contact</h1>
+            <form action="">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <button>Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h5>&copy; Developed by Alozie Samuel All Right Reserved &copy;</h5>
+    </footer>
+  
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    const spinner = document.getElementById("spinner");
+
+    setInterval(()=>{
+        spinner.style.display = "none";
+        
+    }, 3000)
+</script>
+</html>

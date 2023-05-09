@@ -1,0 +1,437 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;   
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 99;
+}
+nav .logo h2{
+    font-size: 40px;
+    font-weight: bold;
+    background-image: linear-gradient(90deg, rgb(3, 182, 182), rgb(17, 17, 17));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+nav .menu{
+    display: flex;
+    gap: 90px;
+    padding: 20px;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}nav .menu .menu-items{
+    transition: 1s ease-in-out;
+}
+nav .menu-items:hover{
+    color: aqua;
+}
+.menu a{
+    text-decoration: none;
+    color: #000;
+}
+nav .btn a{
+    background-color: white;
+    border-radius: 50px;
+    color: black;
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 15px 25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+nav .btn a{
+    transition: 1s ease-in-out;
+}
+header nav .btn a:hover{
+    color: turquoise;
+}
+main .hero{
+    display: flex;
+    margin-top: 100px;
+}
+main .hero .hero-left{
+    padding: 20px 50px;
+    margin-top: 50px;
+    flex: 2;
+}
+main .hero .hero-left h4{
+    color: gray;
+}
+main .hero .hero-left h1{
+    font-size: 100px;
+    width: 120%;
+    line-height: 90px;
+    color: rgb(9, 136, 136);
+    animation: fade 3s linear alternate;
+}
+main .hero .hero-left p{
+    font-size: 15px;
+    color: gray;
+    margin-top: 15px;
+}
+main .hero .hero-left .btn1{
+    display: flex;
+    width: 60%;
+    margin-top: 10px;
+}
+main .hero .hero-left .btn1 a{
+    padding: 15px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+    background: rgb(9, 136, 136);
+    transition: color ease-in-out 1s;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+}
+main .hero .hero-left .btn1 button:hover{
+    color: whitesmoke;
+}
+.hero-left .contact{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+main .hero .hero-right{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex: 2;
+}
+main .hero .hero-right{
+    animation: image 5s linear alternate;
+}
+main .hero .hero-right .icons img{
+    position: absolute;
+    display: grid;
+    place-items: center;
+    z-index: 99;
+    width: 15%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 100px;
+    box-shadow: 5px 5px 15px whitesmoke;
+    animation: icons 1s linear infinite alternate;
+}
+main .hero .hero-right .icons img:nth-child(1){
+    left: 10px;
+    bottom: 100px;
+}
+main .hero .hero-right .icons img:nth-child(2){
+    right: 100px;
+    bottom: 10px;
+}
+main .hero .hero-right .icons img:nth-child(3){
+    right: 100px;
+    top: 100px;
+}
+main .about-me{
+    padding: 40px;
+    border-radius: 20px;
+    color: gray;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .about-me h2{
+    font-size: 20px;
+    color: rgb(15, 158, 139);
+}
+main .about-me .about{
+    margin-top: 40px;
+}
+main  .about p{
+    width: 70%;
+    line-height: 20px;
+}
+main .personality{
+    margin-top: 30px;
+}
+main .skills{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 50px;
+    place-items: center;
+}
+main .skills .html, .css, .js, .node, .bootstrap, .react{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 40%;
+    color: gray;
+    border-radius: 5px;
+    box-shadow: 10px 10px 50px whitesmoke;
+}
+main .projects{
+    padding: 40px;
+    color: rgb(25, 165, 175);
+}
+main .projects h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+main .projects .project-items{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 30px;
+    place-items: center;
+    margin-top: 20px;
+    color: black;
+}
+
+main .projects .project-items img{
+    width: 100%;
+}
+main .projects .project-items .item{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 15px 15px 20px whitesmoke;
+}
+main .projects .project-items .item h4{
+    margin-top: 20px;
+    cursor: pointer;
+}
+main .projects .project-items .item h4:hover{
+    color: rgb(25, 165, 175);
+}
+main .projects .project-items .item p{
+    margin-top: 5px;
+    color: gray;
+}
+main .projects .project-items button{
+    width: 20%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background: rgb(15, 148, 137);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.form{
+    display: grid;
+    place-items: center;
+    margin-top: 30px;
+}
+.form h1{
+    color: rgb(25, 165, 175);
+    font-size: 40px;
+    margin-top: 30px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 40%;
+    margin-top: 20px;
+}
+input{
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+input:focus{
+    border: 2px solid rgb(15, 158, 139);
+    outline: none;
+}
+textarea{
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+textarea:focus{
+    border: 2px solid rgb(15, 158, 139);
+    outline: none;
+}
+form button{
+    background: rgb(15, 158, 139);
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: whitesmoke;
+    box-shadow: 15px 15px 10px whitesmoke;
+}
+.spinner{
+    display: grid;
+    place-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    top: 0;
+    background-color: white;
+}
+.loader{
+    border: 16px solid rgb(15, 158, 139);
+    border-top: 16px solid white;
+    border-bottom: 16px solid white;
+    padding: 50px;
+    width: 120px;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+
+
+
+
+
+@keyframes fade{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+
+@keyframes image {
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+
+
+@keyframes icons{
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform:  rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 780px) {
+    header nav .menu .menu-items{
+        display: none;
+    }
+    header nav .btn a{
+        display: none;
+    }
+    main .hero{
+        flex-direction: column;
+    }
+    main .hero .hero-left h1{
+        font-size: 50px;
+        line-height: 50px;
+    } 
+    main .hero .hero-left .btn1 a{
+        padding: 10px;
+        font-size: 15px;
+    }
+    main .hero-right img{
+        width: 40%;
+    }
+    main .about-me{
+        flex-direction: column;
+    }
+    main  .about p{
+        width: 90%;
+        font-size: 15px;
+    }
+    main .skills{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    main .projects .project-items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    main .projects .project-items button{
+        width: 30%;
+    }
+    form{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:406px) {
+    main .hero .hero-right .icons img{
+        width: 15%;
+        border-radius: 10px;
+        padding: 10px;
+        position: absolute;
+    }
+    main .hero .hero-right .icons img:nth-child(1){
+        left: 10px;
+        bottom: 100px;
+    }
+    main .hero .hero-right .icons img:nth-child(2){
+        left: 170px;
+        top: 220px;
+    }
+    main .hero .hero-right .icons img:nth-child(3){
+        left: 300px;
+        top: 55px;
+    }
+}
+
+
+
+
+
+
+
+
